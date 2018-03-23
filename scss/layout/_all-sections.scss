@@ -1,0 +1,90 @@
+.section {
+    .title, .subtitle, .text, .description, .list, .link, .caption, .data {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 100px 0 80px;
+
+    align-items: center;
+    text-align: center;
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .title, .subtitle {
+        font: 700 2.56rem $font-base;
+        text-transform: uppercase;
+        color: inherit;
+    }
+    .title {
+       letter-spacing: 3.5px;
+       margin-bottom: 1.25rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .button-3d {
+        margin-top: 2rem;
+    }
+    @media (max-width: $tablet) {
+        padding: 60px 0 5px;
+        .button-3d { margin-bottom: 2.5rem; }
+    }
+    @media (max-width: $small) {
+        padding: 60px 0 5px;
+        .title { font-size: 2.2rem;}
+    }
+}
+
+
+// modifier
+.section_welcome {
+    padding: 230px 0 150px;
+    color: white;
+    background-color: #87509c;
+    .title {
+        text-transform: none;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+    }
+    @media (max-width: $tablet) {
+        padding: 100px 0 60px;
+    }
+}
+.section_services {
+    color: white;
+    background-color: #17c2a4;
+    img {
+        height: 12rem;
+        object-fit: none;
+    }
+}
+.section_team {
+    background-color: #e7f1f8;
+    .person-post { color: #3cbee8; }
+}
+.section_skils {
+    background-color: #fff;
+    .chart { margin-bottom: 20px; }
+}
+.section_portfolio {
+    background-color: #ffdd99;
+    img { margin-bottom: 25px; }
+}
+.section_testimonials {
+    color: white;
+    background-color: #d74680;
+}
+.section_contact {
+    color: white;
+    background-color: #3c5499;
+}

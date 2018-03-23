@@ -1,0 +1,14 @@
+.chart {
+	position: relative;
+	&__value {
+		position: absolute;
+		top: 48%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+
+		font-size: 40px;
+		&>span {
+			font-size: 30px;
+		}
+	}
+}

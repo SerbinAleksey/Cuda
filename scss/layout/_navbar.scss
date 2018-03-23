@@ -1,0 +1,114 @@
+.navbar {
+	position: absolute;
+	top: 47px;
+	left: 0;
+	z-index: 9999;
+	display: block;
+	width: 100%;
+    // padding: 57px 0 0;
+    padding: 10px 0 12px;
+
+    color: white;
+    background-color: transparent;
+    .container {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    .logo {
+    	margin-left: 40px;
+    }
+    &-toggle {
+    	display: none;
+    }
+    transition: background-color 0.7s;
+}
+
+// media
+.navbar {
+	@media (max-width: $tablet) {
+		position: fixed;
+		top: 0;
+		padding: 10px 0;
+		background-color: rgba(86, 83, 76, 0.3);
+		transition: background-color 1s;
+		.container {
+			display: block;
+			// flex-direction: column;
+		} 
+		.menu {
+			display: none;
+			padding: 20px 0;
+		}
+		&-toggle {
+			display: block;
+			$toggle-height: 30px;
+			$band-width: 40px;
+			$band-height: 3px;
+			$band-radius: 3px;
+			$band-color: white;
+			position: absolute;
+			top: 15px;
+			right: 4%;
+			display: block;
+			width: $band-width;
+			height: $toggle-height;
+			cursor: pointer;
+			&:before, &:after, i, i:before, i:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: $band-height;
+				margin: 0;
+				padding: 0;
+				border-radius: $band-radius;
+				background-color: $band-color;
+			}
+			i {
+				top: 50%;
+				height: 0;
+				&:before, &:after {
+					transform: translateY(-50%);
+					transition: transform 0.3s;
+				}
+			}
+			&:before, &:after {
+				transition: width 0.3s;
+			}
+			&:before {
+				top: 0;
+				right: 0;
+			}
+			&:after {
+				bottom: 0;
+				left: 0;
+			}
+
+		}
+	}
+}
+
+// fixed
+.navbar_fixed {
+	@media (min-width: $xl) {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: rgba(86, 83, 76, 0.4);
+	}
+}
+// active
+.navbar_active {
+	background-color: rgba(86, 83, 76, 0.98);
+	transition: background-color 0.5s;
+	.navbar-toggle {
+		i {
+			&:before {transform: translateY(-50%) rotate(45deg);}
+			&:after{transform: translateY(-50%) rotate(135deg);}
+		}
+		&:before, &:after {
+			width: 0;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.scroll-up {
+	display: block;
+	// width: 40px;
+	// height: 40px;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	border-radius: 50%;
+	background-color: transparent;
+	color: #3d3029;
+	font-size: 40px;
+	opacity: 0.5;
+	// state
+	// transition: background-color 0.3s;
+	&:hover {
+		// background-color: rgba();
+	}
+}

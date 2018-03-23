@@ -1,0 +1,10 @@
+.ratio-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; // 16:9 для этого соотношения (9/16 = 0.5625)
+    &__content {
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+    }
+}

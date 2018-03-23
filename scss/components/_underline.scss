@@ -1,0 +1,12 @@
+.underline {
+	&:after {
+		content: '';
+
+		display: block;
+		width: 86px;
+		height: 3px;
+		margin: 8px auto;
+
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}

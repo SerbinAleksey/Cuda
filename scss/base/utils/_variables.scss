@@ -1,0 +1,34 @@
+// Typography
+$font-base: 'Titillium Web', sans-serif;
+$font-primary: 'Titillium Web', sans-serif;
+$font-secondary: 'Open Sans', serif;
+
+
+// Colors palette
+$white: white;
+$black: #0e0e0e;
+
+
+// Base colors
+$color-primary: #333;
+$color-primary-hover: #333;
+
+// Media breakpoint up
+// @media (min-width: $sm) {}
+$xxl: 1920px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 0;
+
+// Media breakpoint down
+// @media (max-width: $tablet) {}
+$desktop: $xxl - 1; // ds (desktop-screen)
+$tablet:  $xl - 1;  // ts (tablet-screen)
+$mobail:  $md - 1;  // ms (mobail-screen)
+$small:   $sm - 1;  // ss (small-screen)
+
+
+// border
+$radius: 3px;

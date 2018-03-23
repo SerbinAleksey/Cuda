@@ -1,0 +1,37 @@
+.person {
+	display: flex;
+	margin-bottom: 40px;
+	&-picture {
+		flex: 1;
+	}
+	&-info {
+		flex: 3;
+		text-align: left;
+	}
+	p {
+		font: italic 21px $font-base;
+	}
+	&-name {
+		font: 700 1.5rem $font-base;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+	&-post {
+		color: #ffdd99;
+		margin-bottom: 20px;
+	}
+	@media (max-width: $small) {
+		flex-direction: column;
+		&-picture {
+			margin-bottom: 1.5rem;
+			.round-picture__frame {
+				width: 150px;
+				height: 150px;
+			}
+		}
+		&-info {
+			flex: 1;
+			text-align: center;
+		}
+	}
+}

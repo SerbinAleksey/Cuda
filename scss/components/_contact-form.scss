@@ -1,0 +1,44 @@
+.contact-form {
+    position: relative;
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+    }
+    padding: 0;
+    &__textbox, &__textarea {
+        display: block;
+        width: 100%;
+        padding: 18px 25px;
+
+        color: rgba(255, 255, 255, .9);
+        border: none;
+        border-radius: $radius;
+        background-color: #273a71;;
+
+        @include placeholder { color: rgba(255, 255, 255, .8); }
+        
+        &:focus {
+            @include placeholder { color: rgba(255, 255, 255, .6); }
+        }
+    }
+    &__textarea {
+        min-height: 200px;
+    }
+}
+
+.contact-form__label_arrow {
+    position: relative;    
+    &:after {
+        content: '';
+
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+
+        display: block;
+        width: 11px;
+        height: 11px;
+
+        background: url('../img/ta-arrow.svg') center/contain no-repeat;
+    }
+}

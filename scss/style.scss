@@ -1,0 +1,16 @@
+// @import 'vendors/bootstrap-3-grid';
+// @import 'vendors/owl.carousel';
+// @import 'vendors/owl.theme.default';
+// @import 'vendors/animate';
+@import 'vendors/bootstrap-4-grid';
+
+@import 'base/utils/variables';
+@import 'base/utils/mixins';
+@import 'base/core/normalize';
+@import 'base/core/reset';
+@import 'base/core/bootstrap-4-custom-settings';
+@import 'base/core/typography';
+
+@import 'common/**/*';
+@import 'components/**/*';
+@import 'layout/**/*';

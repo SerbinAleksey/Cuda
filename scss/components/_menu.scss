@@ -1,0 +1,28 @@
+.menu {
+	z-index: 9999;
+	&-list {
+		list-style: none;
+	}
+	&-item {
+		display: inline-block;
+	}
+	&-link, &-item > a {
+		display: block;
+		padding: 6px 16px;
+		margin-left: 12px;
+		font-family: $font-primary;
+		text-transform: uppercase;
+		color: inherit;
+		background-color: transparent;
+		border-radius: $radius*2;
+		transition: background-color 0.3s;
+		&:hover, &:active, &:focus {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+	@media (max-width: $tablet) {
+		&-item {
+			display: block;
+		}
+	}
+}

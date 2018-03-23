@@ -1,0 +1,54 @@
+/*-- Custom settings bootstrap-4-grid --*/
+
+// current desktop
+$big-desktop: 1920px;
+$big-desktop-container: 1260px;
+
+// bootstrap-grid
+$grid-gutter-container: 20px;
+$grid-gutter-column: 10px;
+$desktop-container: 1140px; // 1200px and up
+$tablet-horizontal: 960px;  // 992px and up
+$tablet-container:  720px;  // 768px and up
+$mobail-container:  540px;  // 576px and up
+
+//----------------------------------------
+.container {
+    padding-right: $grid-gutter-container;
+    padding-left: $grid-gutter-container;
+    @media (min-width: 576px) {
+        max-width: $mobail-container;
+    }
+    @media (min-width: 768px) {
+        max-width: $tablet-container;
+    }
+    @media (min-width: 992px) {
+        max-width: $tablet-horizontal;
+    }
+    @media (min-width: 1200px) {
+        max-width: $desktop-container;
+    }
+    @media (min-width: $big-desktop) {
+        max-width: $big-desktop-container;
+    }
+    &-fluid {
+        padding-right: $grid-gutter-container;
+        padding-left: $grid-gutter-container;
+    } 
+}
+
+.row {
+  margin-right: -$grid-gutter-column;
+  margin-left: -$grid-gutter-column;
+}
+
+.col, [class*="col-"] {
+    padding-right: $grid-gutter-column;
+    padding-left: $grid-gutter-column;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
